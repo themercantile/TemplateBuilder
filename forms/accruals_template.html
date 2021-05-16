@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Accruals Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script type="text/javascript" src="../myscript.js"></script>
+  </head>
+  <body>
+    <div id="accrualsTemplateInput" class="container-fluid">
+
+      <form onsubmit="return makeObj_accruals_template()" method="POST">
+        <!-- Added onsubmit="return makeObj_accruals_template()" -->
+        
+        <label for="accTitle">Title Format:<br><mark>DATE - ACCRUAL - SET TO ZERO</mark></label><br>
+        <input type="text" id="accTitle" name="accTitle" placeholder="Enter text" required size="50"><br>
+              
+        <label for="participantNumber">Participant Number</label><br>
+        <input type="text" id="participantNumber" name="participantNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="providerNumber">Provider Number</label><br>
+        <input type="text" id="providerNumber" name="providerNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="sbNumber">Service Booking Number</label><br>
+        <input type="text" id="sbNumber" name="sbNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="sbCancelled">Has the service booking been cancelled?</label><br>
+        <input type="radio" id="sbYes" name="sbCancelled" value="Yes" required>
+        <label for="sbYes">Yes</label><br>
+        <input type="radio" id="sbNo" name="sbCancelled" value="No">
+        <label for="sbNo">No</label><br>
+        
+        <!-- <input type="text" id="sbCancelled" name="sbCancelled" placeholder="Enter text" required><br> -->
+        <label for="actionReq">Action Required</label><br>
+        <input type="text" id="actionReq" name="actionReq" placeholder="Accrual set to zero" required size="50"><br>
+        
+        <label for="accCategory">Category: <b>E.g. "Coordination of Supports"</b></label><br>
+        <input type="text" id="accCategory" name="accCategory" placeholder="Enter text" required size="50"><br>
+        
+        <label for="itemNumber">Item Number (if applicable)</label><br>
+        <input type="text" id="itemNumber" name="itemNumber" size="50"><br>
+        
+        <label for="consumedBudget">Consumed Budget</label><br>
+        <input type="text" id="consumedBudget" name="consumedBudget" placeholder="Enter text" required size="50"><br>
+        
+        <p><br><mark>Please assign to yourself in NDIA Retriggers and Accruals</mark></p><br>
+        <input type="submit" value="Copy to clipboard!">
+        <!-- removed onclick="makeObj_accruals_template()"" -->
+      </form>      
+      
+      <p id="testText"></p>
+
+    </div>
+  
+  </body>
+</html>
+<!-- 
+• Please update title to: Date Added to spreadsheet - ACCRUAL – Set to Zero (e.g. 01/05 - ACCRUAL - Set to Zero)
+• Participant Number:
+• Provider Number:
+• Service Booking Number:
+• Has the Service Booking been cancelled?
+• Action Required: Accrual set to Zero
+• Category:
+• Item Number (if applicable):
+• Consumed Budget:
+• Please assign to yourself in NDIA Retriggers and Accruals -->

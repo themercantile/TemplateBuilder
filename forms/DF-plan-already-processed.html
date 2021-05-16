@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Fix - Plan Already Processed Error</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>    
+    <div id="dataFix" class="container-fluid">
+      <form>
+
+        <label for="dataFixTitle">Title</label><br>
+        <input type="text" id="dataFixTitle" name="dataFixTitle" value="DATA FIX – Periodic Transport" readonly size="50"><br>
+        
+        <label for="participantNumber">Participant NDIS Number</label><br>
+        <input type="text" id="participantNumber" name="participantNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="planNumber">Plan Number</label><br>
+        <input type="text" id="planNumber" name="planNumber" placeholder="Enter text" required size="50"><br>
+
+        <label for="staffID">Login ID for user who received error</label><br>
+        <input type="text" id="delegateID" name="staffID" placeholder="Enter text" required size="50"><br>
+
+        <label for="appStatus">What is the Application Status in Pathway?</label><br>
+        <input type="text" id="appStatus" name="appStatus" placeholder="Enter text" required size="50"><br>
+
+        <label for="approveTicked">Is the Finalise and Approve Plan task ticked?</label><br>
+        <input type="radio" id="approveYes" name="approveTicked" value="Yes" required>
+        <label for="approveYes">Yes</label><br>
+        <input type="radio" id="approveNo" name="emailApprove" value="No">
+        <label for="approveNo">No</label><br>
+
+        <label for="errorText">Error</label><br>
+        <input type="text" id="errorText" name="errorText" value="Plan already processed with plan approval process. Cannot process again." readonly size="80"><br>
+
+        <label for="screenshot">Confirmed screenshot of error message with time/date stamp is included?</label><br>
+        <input type="radio" id="screenYes" name="screenshot" value="Yes" required>
+        <label for="screenYes">Yes</label><br>
+        <input type="radio" id="screenNo" name="screenshot" value="No">
+        <label for="screenNo">No</label><br>
+
+        <!-- In the completed version, the onclick below will call a javascript function to copy the form headings and inputs to the clipboard. -->
+        <input type="submit" onclick="" value="Copy to clipboard!">
+
+      </form>
+    </div>
+  </body> 
+</html>
+
+<!-- Template
+• Please update title to: DATA FIX – Plan Already Processed Error
+• Participant Number:
+• Plan Number:
+• Login ID for user who received error:
+• What is the Application Status in Pathway?
+• Is the Finalise and Approve Plan task ticked?
+• Error: “Plan already processed with plan approval process. Cannot process again.”
+• Confirmed screenshot of error message with time/date is included yes/no: -->

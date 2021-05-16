@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Fix - Finalise Plan and Approve Task not Ticked</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="dataFix" class="container-fluid">
+
+      <form>
+
+        <label for="dataFixTitle">Title</label><br>
+        <input type="text" id="dataFixTitle" name="dataFixTitle" value="DATA FIX – Finalise Plan and Approve task not ticked" readonly size="55"><br>
+        
+        <label for="participantNumber">Participant NDIS Number</label><br>
+        <input type="text" id="participantNumber" name="participantNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="planNumber">Plan Number</label><br>
+        <input type="text" id="planNumber" name="planNumber" placeholder="Enter text" required size="50"><br>
+
+        <label for="planDates">Plan Dates</label><br>
+        <input type="text" id="planDates" name="planDates" placeholder="Enter text" required size="50"><br>
+        
+        <label for="issueMessage">Issue Description</label><br>
+        <input type="text" id="issueMessage" name="issueMessage"
+          value="Plan has been approved successfully but the task 'Finalise Plan and Approve' is not listed as complete." readonly
+          size="105"><br>
+        
+        <label for="planApproved">Is the Plan status listed as Approved?</label><br>
+        <input type="radio" id="approvedYes" name="planApproved" value="Yes" required>
+        <label for="approvedYes">Yes</label><br>
+        <input type="radio" id="approvedNo" name="planApproved" value="No">
+        <label for="approvedNo">No</label><br>
+
+        
+        <label for="planGen">Is there are Plan Approval documented generated?</label><br>
+        <input type="radio" id="genYes" name="planGen" value="Yes" required>
+        <label for="genYes">Yes</label><br>
+        <input type="radio" id="genNo" name="planGen" value="No">
+        <label for="genNo">No</label><br>
+      
+        <!-- In the completed version, the onclick below will call a javascript function to copy the form headings and inputs to the clipboard. -->
+        <input type="submit" onclick="" value="Copy to clipboard!">
+      
+      </form>
+
+    </div>
+  </body>
+</html>
+
+  <!-- Template
+  • Please update title to: DATA FIX – Finalise Plan and Approve task not ticked
+  • Participant Number:
+  • Plan Number:
+  • Plan Dates:
+  • Issue: Plan has been approved successfully but the task "Finalise Plan and Approve" is not listed as complete.
+  • Is the Plan status listed as Approved?
+  • Is there are Plan Approval documented generated? -->
