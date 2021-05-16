@@ -1,24 +1,5 @@
 // The purpose of this script is to copy the template input to the clipboard so it can be pasted to Services Australia or Jira.
 
-// function copyToClipboard() {
-//   let fullURL = document.getElementById("fullURL").value;
-//   console.log(fullURL);
-//   let recordVar = document.getElementById("recordVar").value;
-//   if (fullURL.search(recordVar)===-1) { // This line is searching for the string in the URL. If it isn't there a -1 is returned.
-//     document.getElementById("outURL").innerHTML = "ERROR!";
-//     document.getElementById("batchURL").innerHTML = "ERROR!";
-//     return;
-//   }
-//   console.log(recordVar);
-//   let excelCell = "\", " + document.getElementById("excelCell").value + ", \"";
-//   console.log(excelCell);
-//   let newURL = "=HYPERLINK(CONCATENATE(\"" + fullURL.replace(recordVar, excelCell) + "\"), \"Open Hyperlink\")";
-//   console.log(newURL);
-//   let chromeURL = "=CONCATENATE(\"start chrome " + fullURL.replace(recordVar, excelCell) + "\")";
-//   document.getElementById("outURL").innerHTML = newURL;
-//   document.getElementById("batchURL").innerHTML = chromeURL;
-// }
-
 function makeObj_accruals_template() {
 
   //document.getElementById("testText").innerHTML = "Hello";
@@ -64,25 +45,18 @@ function makeObj_accruals_template() {
 
 }
 
-// Title:
-// Participant Number:
-// Provider Number:
-// Service Booking Number:
-// Has the Service Booking been cancelled?
-// Action Required:
-// Category:
-// Item Number (if applicable):
-// Consumed Budget:
-
-// Please assign to yourself in NDIA Retriggers and Accruals
-// accTitle
-// participantNumber
-// providerNumber
-// sbNumber
-// sbYes
-// sbNo
-// actionReq
-// accCategory
-// itemNumber
-// consumedBudget
-
+function mkObj_DF_close_approved_quote() { }
+function mkObj_DF_critical_error() { }
+function mkObj_DF_DFS_error() { }
+function mkObj_DF_DPM_neg_value() { }
+function mkObj_DF_finalise_plan() { }
+function mkObj_DF_inbox_task_removal() { }
+function mkObj_DF_incorrect_status() { }
+function mkObj_DF_periodic_transport() { }
+function mkObj_DF_plan_already_processed() { }
+function mkObj_DF_stuck_qual_check() { }
+function mkObj_DF_s100_stuck() {}
+function mkObj_DF_sm_agreement_nogen() { }
+function mkObj_doco_regen_template() { }
+function mkObj_doco_retrig_template() { }
+function mkObj_regen_monthly_summary() { }

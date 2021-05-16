@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DATA FIX – Self-Managed Agreement not Generated</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script type="text/javascript" src="../myscript.js"></script>
+  </head>
+  <body>
+    <div id="accrualsTemplateInput" class="container-fluid">
+
+      <form onsubmit="return mkObj_DF_sm_agreement_nogen()" method="POST">
+        <!-- Added onsubmit="return makeObj_accruals_template()" -->
+        
+        <label for="dataFixTitle">Title</label><br>
+        <input type="text" id="dataFixTitle" name="dataFixTitle" value="DATA FIX – Self-Managed Agreement not Generated" readonly size="50"><br>
+        
+        <label for="participantNumber">Participant NDIS Number</label><br>
+        <input type="text" id="participantNumber" name="participantNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="planNumber">Plan Number</label><br>
+        <input type="text" id="planNumber" name="planNumber" placeholder="Enter text" required size="50"><br>
+        
+        <label for="planDates">Plan Dates</label><br>
+        <input type="text" id="planDates" name="planDates" placeholder="Enter text" required size="50"><br>
+        
+        <label for="errorCategory">Which category/subcategory is causing the issue?</label><br>
+        <input type="text" id="errorCategory" name="errorCategory" placeholder="Enter text" required size="50"><br>
+        
+        <label for="errorIssue">What is the issue?</label><br>
+        <textarea id="errorIssue" name="errorIssue" placeholder="Enter text" required cols="50" rows="5"></textarea><br>
+        
+        <label for="el2Email">Have you attached an email containing minimum EL2 approval and what the budget needs to be changed to?</label><br>
+        <input type="radio" id="emailYes" name="el2Email" value="Yes" required>
+        <label for="emailYes">Yes</label><br>
+        <input type="radio" id="emailNo" name="el2Email" value="No">
+        <label for="emailNo">No</label><br>
+        
+        <input type="submit" value="Copy to clipboard!">
+      
+      </form>
+      
+      <p id="testText"></p>
+
+    </div>
+  
+  </body>
+</html>
+
+<!-- • Please update title to: DATA FIX – Self-Managed Agreement not Generated
+• Participant Number:
+• Plan Number:
+• Plan Dates:
+• What Category/Subcategory is causing the issue?
+• What is the issue?
+• Have you attached an email containing minimum EL2 approval and what the budget needs to be changed to -->
