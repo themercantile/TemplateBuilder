@@ -5,11 +5,12 @@
     <title>Document Regenerate Template</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script type="text/javascript" src="../myscript.js"></script>
   </head>
   <body>
     <div id="regenTemplateInput" class="container-fluid">
 
-      <form>
+      <form onsubmit="return mkObj_doco_regen_template()" method="POST">
       
         <label for="regenTitle">Title: e.g. "REGENERATE REMITTANCE ADVICE – No Transaction in Outbound Documents"</label><br>
         <input type="text" id="regenTitle" name="regenTitle" placeholder="Enter text" required size="50"><br>
@@ -37,7 +38,7 @@
 
         <p><mark>Please escalate to "PSB PSCD Support" in Service Manager</mark></p><br>
         <!-- In the completed version, the onclick below will call a javascript function to copy the form headings and inputs to the clipboard. -->
-        <input type="submit" onclick="" value="Copy to clipboard!">
+        <input type="submit" value="Copy to clipboard!">
 
       </form>
 

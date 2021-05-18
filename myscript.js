@@ -42,7 +42,7 @@ function makeObj_accruals_template() {
 }
 
 /* *************************************************** */
-
+mkObj_DF_close_approved_quote()
 function mkObj_DF_close_approved_quote() {   
   let dataFixTitle = document.getElementById("dataFixTitle").value;
   let participantNumber = document.getElementById("participantNumber").value;
