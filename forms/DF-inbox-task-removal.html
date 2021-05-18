@@ -10,8 +10,8 @@
     <div id="dataFix" class="container-fluid">
       <form>
 
-        <label for="dataFixTitle">Title</label><br>
-        <input type="text" id="dataFixTitle" name="dataFixTitle" placeholder="DATA FIX – Finalise Plan and Approve task not ticked"
+        <label for="dataFixTitle">Title Format<br><mark>DATA FIX – Inbox Task Removal – Task type</mark></label><br>
+        <input type="text" id="dataFixTitle" name="dataFixTitle" placeholder="DATA FIX – Inbox Task Removal – Task type"
           required size="80"><br>
 
         <label for="removeAttempt">What has the user done to try remove the task?</label><br>
@@ -22,21 +22,12 @@
         
         <label for="userRequest">What does the user wants done?</label><br>
         <input type="text" id="userRequest" name="userRequest" value="Task manually withdrawn/closed" readonly size="50"><br>
-        
-        <label for="planDates">Plan Dates</label><br>
-        <input type="text" id="planDates" name="planDates" placeholder="Enter text" required size="50"><br>
-        
-        <label for="issueMessage">Issue Description</label><br>
-        <input type="text" id="issueMessage" name="issueMessage"
-          value="Plan has been approved successfully but the task 'Finalise Plan and Approve' is not listed as complete."
-          readonly size="105"><br>
-        
+                
         <label for="screenshot">Confirmed screenshot of error message with time/date stamp is included?</label><br>
         <input type="radio" id="screenYes" name="screenshot" value="Yes" required>
         <label for="screenYes">Yes</label><br>
         <input type="radio" id="screenNo" name="screenshot" value="No">
         <label for="screenNo">No</label><br>
-        
         
         <label for="quoteClosed">Have you confirmed the related quote is closed in CRM (N/A if not provider quotation)?</label><br>
         <input type="radio" id="closedYes" name="quoteClosed" value="Yes" required>
